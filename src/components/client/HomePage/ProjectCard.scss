@@ -125,8 +125,8 @@
 @include respond-to('sm') {
   .project-card {
     .image-container {
-      img {
-        height: 200px;
+      .img-3 {
+        height: 160px;
       }
     }
 
