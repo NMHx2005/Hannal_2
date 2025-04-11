@@ -15,7 +15,6 @@ export const featuredProjects: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 2,
@@ -49,7 +48,6 @@ export const featuredProjectsSecond: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 2,
@@ -78,7 +76,6 @@ export const featuredProjectsSecond: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 6,
@@ -100,7 +97,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 2,
@@ -108,7 +104,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 3,
@@ -116,7 +111,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 4,
@@ -124,7 +118,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 5,
@@ -132,7 +125,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 6,
@@ -140,7 +132,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 7,
@@ -148,7 +139,6 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
   {
     id: 8,
@@ -156,6 +146,5 @@ export const featuredProjectsEvent: FeaturedProject[] = [
     image: '/images/xuong-cho-thue-khu-cong-nghiep-Thai-Hoa-Long-An-768x575.jpg',
     location: 'KCN Hải Sơn, Đức Hòa Đông',
     area: '5000m2',
-    description: 'Đất cụm công nghiệp, Đóng thuế 1 lần: đến năm 2050'
   },
 ]; 
