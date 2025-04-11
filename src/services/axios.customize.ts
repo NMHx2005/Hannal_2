@@ -2,15 +2,10 @@ import axios from "axios";
 import { Mutex } from "async-mutex";
 
 const mutex = new Mutex();
-const BASE_URL = `${import.meta.env.VITE_BACKEND_URL}`; // Điền URL API tại đây
 
-// const instance = axios.create({
-//     baseURL: BASE_URL,
-//     withCredentials: true
-// });
-
+// Create axios instance with base configuration
 const instance = axios.create({
-    baseURL: 'https://dummyjson.com/',
+    baseURL: import.meta.env.VITE_BACKEND_URL || 'https://dummyjson.com/',
     timeout: 10000,
 });
 
