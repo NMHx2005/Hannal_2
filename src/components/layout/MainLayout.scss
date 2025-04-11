@@ -1,0 +1,379 @@
+@import '../../styles/mixins';
+
+.main-layout {
+  .top-bar {
+    background-color: #0E8F24;
+    padding: 4px 0;
+    color: white;
+    font-size: 13px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      a {
+        color: white;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .working-hours {
+      font-weight: 500;
+    }
+
+    .top-menu {
+      display: flex;
+      gap: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .main-header {
+    padding: 16px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 300px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .address {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .icon {
+          color: #FFA500;
+          font-size: 24px;
+        }
+
+        .text {
+          max-width: 300px;
+          font-size: 16px;
+          color: #333;
+        }
+      }
+
+      .social-buttons {
+        display: flex;
+        gap: 12px;
+
+        .btn {
+          padding: 8px 16px;
+          border-radius: 4px;
+          font-weight: 500;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          transition: opacity 0.3s;
+
+          &:hover {
+            opacity: 0.9;
+          }
+
+          &.zalo {
+            background-color: #0068FF;
+            color: white;
+          }
+
+          &.facebook {
+            background-color: #1877F2;
+            color: white;
+          }
+
+          &.youtube {
+            background-color: #FF0000;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .main-menu {
+    background-color: #0E8F24;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ant-menu {
+      background: transparent;
+      border: none;
+      color: white;
+      font-weight: 500;
+      width: 100%;
+
+      .ant-menu-item, .ant-menu-submenu {
+        color: white;
+        font-size: 13px;
+
+        &:hover, &-active, &-selected {
+          color: yellow !important;
+          background: transparent;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .ant-menu-submenu-title {
+        color: white;
+
+        &:hover {
+          color: yellow;
+        }
+
+        .ant-menu-submenu-arrow {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #0E8F24;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+  }
+}
+
+// Drawer styles
+.mobile-menu-drawer {
+  .ant-drawer-header {
+    background: #0E8F24;
+    border-bottom: none;
+    
+    .ant-drawer-title {
+      color: white;
+      font-weight: 500;
+    }
+
+    .ant-drawer-close {
+      color: white;
+    }
+  }
+
+  .drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .ant-menu {
+      flex: 1;
+      border-right: none;
+
+      .ant-menu-item, 
+      .ant-menu-submenu {
+        font-size: 14px;
+        
+        &:hover,
+        &-active,
+        &-selected {
+          color: #0E8F24 !important;
+        }
+      }
+
+      .ant-menu-submenu-title:hover {
+        color: #0E8F24;
+      }
+    }
+
+    .drawer-contact {
+      padding: 16px;
+      border-top: 1px solid #eee;
+
+      .drawer-address {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 16px;
+
+        .icon {
+          color: #FFA500;
+          font-size: 20px;
+          margin-top: 3px;
+        }
+
+        .text {
+          font-size: 14px;
+          color: #333;
+          line-height: 1.4;
+        }
+      }
+
+      .drawer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .btn {
+          padding: 8px 16px;
+          border-radius: 4px;
+          font-weight: 500;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          transition: opacity 0.3s;
+          font-size: 14px;
+
+          &:hover {
+            opacity: 0.9;
+          }
+
+          &.zalo {
+            background-color: #0068FF;
+            color: white;
+          }
+
+          &.facebook {
+            background-color: #1877F2;
+            color: white;
+          }
+
+          &.youtube {
+            background-color: #FF0000;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('lg') {
+  .main-layout {
+    .main-header {
+      .logo {
+        width: 200px;
+      }
+
+      .header-right {
+        .address .text {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('md') {
+  .main-layout {
+    .top-bar {
+      .working-hours {
+        display: none;
+      }
+    }
+
+    .main-header {
+      .header-right {
+        .address {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('sm') {
+  .main-layout {
+    .mobile-menu-button {
+      display: block;
+    }
+
+    .top-bar {
+      .container {
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px 16px;
+      }
+
+      .social-links {
+        width: 100%;
+        display: none;
+        justify-content: center;
+      }
+
+      .working-hours {
+        display: block;
+      }
+
+      .top-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        display: none;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .main-header {
+      .container {
+        padding: 0 16px;
+      }
+
+      .logo {
+        width: 180px;
+        margin: 0 auto;
+      }
+
+      .header-right {
+        display: none;
+      }
+    }
+
+    .main-menu {
+      display: none;
+    }
+  }
+} 

@@ -1,0 +1,116 @@
+@import '../../../styles/mixins';
+
+.hero-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-height: 600px;
+
+  .hero-slider {
+    height: 100%;
+
+    .slick-slide {
+      cursor: grab;
+      height: 600px !important;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    z-index: 10;
+
+    li {
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        transition: all 0.3s;
+
+        &:hover {
+          background: #fff;
+        }
+      }
+
+      &.slick-active button {
+        width: 24px;
+        border-radius: 5px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+@include respond-to('lg') {
+  .hero-section {
+    .slide-content {
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include respond-to('sm') {
+  .hero-section {
+    .slide-content {
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+} 
