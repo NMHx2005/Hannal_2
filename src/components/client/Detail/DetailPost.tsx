@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Row, Col, Form, Input, Button, Typography, Breadcrumb } from 'antd';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './DetailPost.scss';
 import SearchSection from '../Search/SearchSection';
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const { TextArea } = Input;
 
 interface ProjectDetail {
