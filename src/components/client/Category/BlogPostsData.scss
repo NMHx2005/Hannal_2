@@ -1,0 +1,61 @@
+// BlogPostsList.scss
+.blog-posts-container {
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 8px;
+    color: #333;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .blog-posts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    .blog-post-item {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      .blog-post-link {
+        display: block;
+        color: #4d8e00;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.4;
+        transition: color 0.2s;
+        
+        &:hover {
+          color: #3c7000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .loading, .error {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .error {
+    color: #d32f2f;
+  }
+}

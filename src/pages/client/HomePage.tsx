@@ -1,6 +1,6 @@
-import FeaturedProjects from '@/components/client/HomePage/FeaturedProjects'
+import FeaturedProjects from '@/components/client/Products/FeaturedProjects'
 import HeroSection from '@/components/client/HomePage/HeroSection'
-import SearchSection from '@/components/client/HomePage/SearchSection'
+import SearchSection from '@/components/client/Search/SearchSection'
 import { featuredProjects, featuredProjectsEvent, featuredProjectsSecond } from '@/data/featuredProjectsData'
 
 const HomePage = () => {

@@ -1,0 +1,255 @@
+@import '../../../styles/mixins';
+
+.contact-page {
+  .map-section {
+    width: 100%;
+    height: 450px;
+    
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contact-content {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info {
+      .section-title {
+        color: #0E8F24;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        
+        i {
+          color: #0E8F24;
+          font-size: 18px;
+          margin-right: 15px;
+          margin-top: 3px;
+        }
+
+        p {
+          margin: 0;
+          font-size: 15px;
+          line-height: 1.6;
+
+          a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+
+            &:hover {
+              color: #0E8F24;
+            }
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+
+        .social-link {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-decoration: none;
+          transition: opacity 0.3s;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &.facebook {
+            background-color: #1877f2;
+          }
+
+          &.email {
+            background-color: #ea4335;
+          }
+
+          &.phone {
+            background-color: #0E8F24;
+          }
+
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+
+      .ant-input,
+      .ant-input-textarea {
+        border-radius: 4px;
+        border: 1px solid #d9d9d9;
+        padding: 8px 12px;
+
+        &:focus,
+        &:hover {
+          border-color: #0E8F24;
+          box-shadow: none;
+        }
+      }
+
+      .submit-button {
+        width: 100%;
+        height: 45px;
+        background-color: #0E8F24;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: darken(#0E8F24, 5%);
+        }
+      }
+    }
+  }
+}
+
+// Responsive styles
+@include respond-to('lg') {
+  .contact-page {
+    .contact-content {
+      padding: 50px 0;
+
+      .contact-grid {
+        gap: 30px;
+      }
+
+      .contact-info {
+        .section-title {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('md') {
+  .contact-page {
+    .map-section {
+      height: 350px;
+    }
+
+    .contact-content {
+      padding: 40px 0;
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .contact-info {
+        .section-title {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+
+        .info-item {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('sm') {
+  .contact-page {
+    .map-section {
+      height: 300px;
+    }
+
+    .contact-content {
+      padding: 30px 0;
+
+      .contact-grid {
+        gap: 30px;
+      }
+
+      .contact-info {
+        .section-title {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        .info-item {
+          margin-bottom: 12px;
+          
+          i {
+            font-size: 16px;
+            margin-right: 12px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .social-links {
+          margin-top: 20px;
+          gap: 12px;
+
+          .social-link {
+            width: 35px;
+            height: 35px;
+
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .contact-form {
+        padding: 20px;
+
+        .ant-form-item {
+          margin-bottom: 15px;
+        }
+
+        .submit-button {
+          height: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+} 
